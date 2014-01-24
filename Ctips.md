@@ -1,5 +1,5 @@
- Use a package manager
- =====================
+Use a package manager
+=====================
 
   * compiler: Definitely install gcc; Clang may be available.
   * gdb, a debugger
@@ -13,18 +13,20 @@
 Compiling C with here-document
 ==============================
 
-From shell: 
+From shell:
+```
 go_flags="-g -Wall -include allheaders.h -lm `pkg-config --cflags --libs glib-2.0`"
 alias go_c="clang -xc '-' $go_flags"
+```
 
 and then:
+```
 go_c << EOF
 Your c program
 EOF
+```
 
 Compiling with make
 ===================
 
-make erf
-or
-P=list make
+```make erf``` or ```P=list make```
