@@ -30,3 +30,9 @@ Compiling with make
 ===================
 
 ```make erf``` or ```P=list make```
+
+Using Libraries without being root
+==================================
+
+Compiling under Windows (POSIX and not)
+=======================================
